@@ -28,6 +28,23 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
+
+  $('.lineUpButton').on('click', function(event) {
+    // for each dancer in the array, set the 'left' to 10
+    makeDancer.prototype.lineUp();
+  });
+
+  $('#pikachu').on('click', function(event) {
+    // for each dancer in the array, set the 'left' to 10
+    makeDancer.prototype.lineUp();
+  });
+
+  /*
+  $('#pikachu').on('mouseover', function () {
+    makePikachuDancer.prototype.playSound();
+  }); */
+
 });
 

@@ -20,5 +20,35 @@ makePikachuDancer.prototype.step = function() {
   //this.oldStep;
   //console.log(this.oldStep);
   makeDancer.prototype.step.call(this);
-  this.$node.toggle();
-}
+  //this.$node.fadeOut();
+  // var pikasound = document.createElement("audio");
+  //   pikasound.src="http://cerealburner.tripod.com/pika_pika_cheer.wav";
+  //   pikasound.volume=0.2;
+  //   pikasound.autoPlay=false;
+  //   pikasound.preLoad=true;
+
+  // this.$node.on('mouseover', function(event) {
+  //   // for each dancer in the array, set the 'left' to 10
+  //   makePikachuDancer.prototype.fadeOut();
+  // });
+  //this.$node.fadeOut();
+
+  /*
+  this.$node.click(function() {
+    this.$node.fadeOut();
+  })*/
+};
+
+// makePikachuDancer.prototype.playSound = function() {
+//   this.$node.mouseover(function() {
+//     fadeOut();
+//   });
+//}
+/*
+makePikachuDancer.prototype.playSound = function playSound ()
+{
+  $('#wind-sound')[0].volume = 0.7;
+  $('#wind-sound')[0].load();
+  $('#wind-sound')[0].play();
+};
+*/

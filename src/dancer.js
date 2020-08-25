@@ -50,14 +50,30 @@ makeDancer.prototype.step = function () {
 };
 
 makeDancer.prototype.setPosition = function (top, left) {
-    // Use css top and left properties to position our <span> tag
-    // where it belongs on the page. See http://api.jquery.com/css/
-    //
-    var styleSettings = {
-      top: top,
-      left: left
-    };
-    this.$node.css(styleSettings);
-}
+  // Use css top and left properties to position our <span> tag
+  // where it belongs on the page. See http://api.jquery.com/css/
+  //
+  var styleSettings = {
+    top: top,
+    left: left
+  };
+  this.$node.css(styleSettings);
+};
 
+
+makeDancer.prototype.lineUp = function() {
+  var styleSettings = {
+    top: '600px'
+  };
+
+  for (var i = 0; i < window.dancers.length; i++) {
+    window.dancers[i].$node.css(styleSettings);
+  }
+};
+
+// makeDancer.prototype.shake = function() {
+
+//   this.$node.css(styleSettings);
+
+// };
 

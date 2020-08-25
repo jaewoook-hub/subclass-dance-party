@@ -3,22 +3,47 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('http://vignette4.wikia.nocookie.net/fantendo/images/5/51/Pok%C3%A9mon_Stadium_2.jpg/revision/latest?cb=20141221100214');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 18px;
 }
+/*
 body, a:link, a:visited, a:active{
-  color: lightblue;
-}
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+
+}*/
+
+.addDancerButton, .lineUpButton{
+  /*padding:5px 12px;
+  float:right; */
+  margin-left: 200px;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+
 }
 .topbar{
-  height:32px;
+  height:50px;
+  background-color: #555;
+}
+.buttonbar{
+  height:50px;
   background-color: #555;
 }
 .title{
-  background-color: #777;
+  /*background-color: #777;*/
+  margin-left: 700px;
+  margin-bottom: 100px;
+  margin-top: 150px;
+  font-size: 50px;
+  color: red;
 }
 .dancer{
   border:10px solid red;
@@ -29,4 +54,39 @@ body, a:link, a:visited, a:active{
 #pikachu{
   border:none;
   position:absolute;
+  animation: grow 0.5s;
+}
+
+@keyframes grow {
+  50% { transform: scaleX(3) scaleY(3); }
+  /*100% { transform: scaleX(3) scaleY(3); }*/
+}
+
+#charmander{
+  border:none;
+  position:absolute;
+  animation: rotate 1s;
+}
+
+@keyframes rotate {
+  30% { transform: rotate(180deg) translate(150px); }
+  60% { transform: translate(-150px); }
+  100% { transform: rotate(360deg); }
+}
+
+#pokeball{
+  border:none;
+  position:absolute;
+}
+
+#blinkyButton {
+  background-color: red;
+}
+
+#charmanderButton{
+  background-color: orange;
+}
+
+#pikachuButton {
+  background-color: yellow;
 }

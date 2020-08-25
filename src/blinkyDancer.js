@@ -24,6 +24,7 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   // var oldStep = makeDancer.prototype.step.call(this);
   //this.oldStep = makeDancer.prototype.step;
   //console.log(this);
+  this.$node.attr('id', 'pokeball').prepend('<img id = "charmanderImg" src="http://www.pngall.com/wp-content/uploads/4/Pokeball-PNG-File-Download-Free.png" style="width:100px;height:100px;" />');
 };
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
@@ -35,4 +36,4 @@ makeBlinkyDancer.prototype.step = function() {
   //console.log(this.oldStep);
   makeDancer.prototype.step.call(this);
   this.$node.toggle();
-}
+};
