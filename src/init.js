@@ -32,19 +32,16 @@ $(document).ready(function() {
   });
 
   $('.lineUpButton').on('click', function(event) {
-    // for each dancer in the array, set the 'left' to 10
     makeDancer.prototype.lineUp();
   });
 
   $('#pikachu').on('click', function(event) {
-    // for each dancer in the array, set the 'left' to 10
     makeDancer.prototype.lineUp();
   });
 
-  /*
-  $('#pikachu').on('mouseover', function () {
-    makePikachuDancer.prototype.playSound();
-  }); */
+  $('.interactButton').on('click', function(event) {
+    makeDancer.prototype.interact();
+  });
 
 });
 

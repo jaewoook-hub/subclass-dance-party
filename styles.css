@@ -8,15 +8,9 @@ body{
   background-repeat: no-repeat;
   font-size: 18px;
 }
-/*
-body, a:link, a:visited, a:active{
 
-}*/
-
-.addDancerButton, .lineUpButton{
-  /*padding:5px 12px;
-  float:right; */
-  margin-left: 200px;
+.addDancerButton, .lineUpButton, .interactButton{
+  margin-left: 150px;
   background-color: white;
   border: none;
   color: black;
@@ -37,14 +31,15 @@ body, a:link, a:visited, a:active{
   height:50px;
   background-color: #555;
 }
+
 .title{
-  /*background-color: #777;*/
   margin-left: 700px;
   margin-bottom: 100px;
   margin-top: 150px;
   font-size: 50px;
   color: red;
 }
+
 .dancer{
   border:10px solid red;
   border-radius:10px;
@@ -59,7 +54,6 @@ body, a:link, a:visited, a:active{
 
 @keyframes grow {
   50% { transform: scaleX(3) scaleY(3); }
-  /*100% { transform: scaleX(3) scaleY(3); }*/
 }
 
 #charmander{

@@ -60,7 +60,6 @@ makeDancer.prototype.setPosition = function (top, left) {
   this.$node.css(styleSettings);
 };
 
-
 makeDancer.prototype.lineUp = function() {
   var styleSettings = {
     top: '600px'
@@ -71,9 +70,23 @@ makeDancer.prototype.lineUp = function() {
   }
 };
 
-// makeDancer.prototype.shake = function() {
+makeDancer.prototype.interact = function() {
+    for (var i = 0; i < window.dancers.length; i+=2) {
+      var randomNum = Math.round(Math.random() * (1400 - 200) + 200);
 
-//   this.$node.css(styleSettings);
+      var styleSettings1 = {
+        top: '550px',
+        left: randomNum
+      };
 
-// };
+      var styleSettings2 = {
+        top: '550px',
+        left: randomNum + 100
+      };
+
+        window.dancers[i].$node.css(styleSettings1);
+        window.dancers[i+1].$node.css(styleSettings2);
+    }
+
+};
 
